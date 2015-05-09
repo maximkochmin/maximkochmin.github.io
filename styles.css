@@ -1,0 +1,100 @@
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,dialog,div,dl,dt,em,embed,fieldset,figcaption,figure,font,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,hr,html,i,iframe,img,ins,kbd,label,legend,li,main,mark,menu,meter,nav,object,ol,output,p,pre,progress,q,rp,rt,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video,xmp{border:0;margin:0;padding:0;font-size:100%}html,body{height:100%}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}b,strong{font-weight:bold}img{color:transparent;font-size:0;vertical-align:middle;-ms-interpolation-mode:bicubic}ol,ul{list-style:none}li{display:list-item}table{border-collapse:collapse;border-spacing:0}th,td,caption{font-weight:normal;vertical-align:top;text-align:left}q{quotes:none}q:before,q:after{content:'';content:none}sub,sup,small{font-size:75%}sub,sup{line-height:0;position:relative;vertical-align:baseline}sub{bottom:-0.25em}sup{top:-0.5em}svg{overflow:hidden}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    color: #313131;
+    line-height: 25px;
+}
+
+a, a:link, a:visited {
+    color: rgb(0, 0, 238);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h1, h2 {
+    line-height: 50px;
+    margin-bottom: 25px;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.header {
+    background: gray;
+    padding: 0 1em;
+}
+
+.date {
+    color: gray;
+    font-size: 0.5em;
+    padding: 0 1em;
+}
+
+.date:before {
+    content: '[';
+}
+
+.date:after {
+    content: ']';
+}
+
+.post h2 {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.post img {
+    display: block;
+    margin: 0 auto;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    max-width: 100%;
+    height: auto;
+}
+
+p {
+    margin-bottom: 25px;
+    font-size: 90%;
+}
+
+p:first-letter {
+    font-size: 150%;
+    color: black;
+}
+
+ol {
+    list-style-type: decimal-leading-zero;
+}
+
+ol li {
+    margin-bottom: 25px;
+}
+
+footer {
+    margin-top: 25px;
+    padding-top: 25px;
+    border: solid #313131;
+    border-width: 1px 0 0;
+    border-color: rgba(0, 0, 0, 0.2);
+    font-style: italic;
+    font-size: 15px;
+    line-height: 25px
+}
+
+.container {
+    padding: 25px 55px;
+}
