@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#app {
+    max-width: 320px;
+    margin: 0 auto;
+    font-family: 'PT Sans', sans-serif;
+    color: #282822;
+}
+
+h1 {
+    font-size: 32px;
+    line-height: 36px;
+    margin-top: 12px;
+    margin-bottom: 16px;
+}
+
+p {
+    margin-bottom: 12px;
+}
+
+label {
+    display: block;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 12px;
+}
+
+input[type="text"] {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 12px;
+    margin-left: 16px;
+}
+
+input[type="checkbox"] {
+    margin-right: 16px;
+}
+
+button {
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: 4px;
+    background: white;
+    border: 1px solid #eee;
+    padding: 8px 16px;
+    font-size: 16px;
+    margin: 0 4px 4px 0;
+    transition: border-color 0.3s;
+}
+
+button:disabled {
+    color: #eee;
+}
+
+button:hover {
+    border-color: #666;
+}
+
+button:disabled,
+button:disabled:hover {
+    background: white;
+    color: #eee;
+    border-color: #eee;
+}
+
+.tap {
+    display: block;
+    margin-top: 12px;
+    width: 100%;
+    padding: 1em 0;
+    background: #6391c4;
+    color: white;
+}
+
+.record {
+    background: #ff4574;
+    color: white;
+}
+
+.play {
+    background: blue;
+    color: white;
+}
+
+.clear {
+    background: #ff4574;
+    color: #282822;
+}
+
