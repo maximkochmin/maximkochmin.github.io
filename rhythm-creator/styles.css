@@ -1,9 +1,11 @@
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
 #app {
+    width: 90vw;
     max-width: 320px;
     margin: 0 auto;
     font-family: 'PT Sans', sans-serif;
@@ -28,11 +30,27 @@ label {
     margin-bottom: 12px;
 }
 
-input[type="text"] {
-    font-size: 16px;
-    line-height: 20px;
+input[type=number] {
+    display: table-cell;
+    width: 100%;
+    font-size: 24px;
+    line-height: 32px;
+    height: 32px;
     margin-bottom: 12px;
-    margin-left: 16px;
+    border: solid #eee;
+    border-width: 0 0 1px 0;
+    outline: none;
+}
+
+input[type=number]:focus {
+    border-color: #6391c4;
+    margin-bottom: 8px;
+    border-width: 0 0 4px 0;
+}
+
+input[type=number]:disabled {
+    color: #ccc;
+    border-color: transparent;
 }
 
 input[type="checkbox"] {
@@ -51,7 +69,7 @@ button {
     border: 1px solid #eee;
     padding: 8px 16px;
     font-size: 16px;
-    margin: 0 4px 4px 0;
+    margin: 0 0 4px 0;
     transition: border-color 0.3s;
 }
 
@@ -74,7 +92,7 @@ button:disabled:hover {
     display: block;
     margin-top: 12px;
     width: 100%;
-    height: 320px;
+    height: 280px;
     padding: 1em 0;
     background: #6391c4;
     color: white;
@@ -90,8 +108,14 @@ button:disabled:hover {
     color: white;
 }
 
-.clear {
+.clear {gg
     background: #ff4574;
     color: #282822;
 }
 
+.row {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
