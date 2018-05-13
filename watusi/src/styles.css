@@ -7,6 +7,14 @@ body {
     min-width: 320px;
 }
 
+a {
+    transition: color 1s;
+}
+
+a svg {
+    transition: fill 1s;
+}
+
 /** top bar */
 .top-bar {
     background: rgba(0, 0, 0, 0.8);
@@ -52,8 +60,8 @@ body {
 .social-links a svg {
     display: block;
     fill: rgba(255, 255, 255, 0.5);
-    width: 20px;
-    height: 20px;
+    width: 26px;
+    height: 26px;
 }
 
 .social-links a:hover svg {
@@ -104,10 +112,6 @@ body {
         display: none;
     }
 
-    .logo img {
-        height: 21px;
-    }
-
     .top-bar-content {
         flex-wrap: wrap;
     }
@@ -115,13 +119,13 @@ body {
     .logo {
         order: 1;
         width: 50%;
-        height: 30px;
+        height: 36px;
     }
 
     .social-links {
         order: 2;
         width: 50%;
-        height: 30px;
+        height: 36px;
     }
 
     .contacts {
@@ -129,5 +133,13 @@ body {
         width: 100%;
         margin-top: 15px;
         text-align: center;
+    }
+
+    .contacts > a {
+        margin-bottom: 8px;
+    }
+
+    .contacts > a:last-child {
+        margin-bottom: 0;
     }
 }
